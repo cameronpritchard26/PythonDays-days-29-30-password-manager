@@ -20,7 +20,7 @@ A GUI password manager built with Python and Tkinter, part of [100 Days of Code:
 
 ### Prerequisites
 
-- Python 3.x
+- [uv](https://docs.astral.sh/uv/)
 
 ### Installation
 
@@ -30,21 +30,12 @@ A GUI password manager built with Python and Tkinter, part of [100 Days of Code:
    cd PythonDays-days-29-30-password-manager
    ```
 
-2. **Create and activate a virtual environment** (optional but recommended)
+2. **Install dependencies**
    ```bash
-   python -m venv .venv
-   # Windows
-   .venv\Scripts\activate
-   # macOS / Linux
-   source .venv/bin/activate
+   uv sync
    ```
 
-3. **Install dependencies**
-   ```bash
-   pip install -r requirements.txt
-   ```
-
-4. **Set up your environment variables**
+3. **Set up your environment variables**
 
    Create a `.env` file in the project root:
    ```
@@ -54,7 +45,7 @@ A GUI password manager built with Python and Tkinter, part of [100 Days of Code:
 ### Usage
 
 ```bash
-python main.py
+uv run main.py
 ```
 
 1. Enter a website name, email/username, and password (or click **Generate Password**).
